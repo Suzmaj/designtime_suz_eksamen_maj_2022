@@ -1,0 +1,184 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font: 20px Lato;
+  font-family: lato;
+  margin: 0;
+  color:#24292e;
+}
+H1
+{
+color: #C66AAB;
+font: 55px Courgette;
+}
+H2
+{
+  color: #C66AAB;
+  font: 26px Courgette;
+
+}
+H3
+{
+  color: #C66AAB;
+  font: 20px Courgette;
+
+}
+H4
+{
+
+}
+H5
+{
+  color: #24292e;
+  font: 12px Courgette;
+  font-style: italic;
+}
+
+/*skalerer billedet i rigtige propertioner*/
+img {
+  width: 100%;
+  height: auto;
+}
+.img_profil {
+  /*background-color: #aaa;*/
+  width: 220px;
+  height: 243px;
+  padding-right:50px;
+  float: left;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #24292e;
+
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 50px 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  /*background-color: #C66AAB;*/
+  background-color: #707070;
+}
+
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #C66AAB; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  /*margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.ul li{
+float: none;
+}
+
+/*.side ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #;
+  height: 100%; /* Full height */
+  /*position: fixed; /* Make it stick, even on scroll */
+  /*overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+.list_profil{
+font-size: 20px;
+padding-bottom: 200px;
+}
+
+.intro_tekst_cv p{
+margin-top: 50px;
+}
+/* Header/logo Title */
+.header {
+  width: 100%;
+  height: auto;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0px;
+  padding:0px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 80%;
+  background-color: #F5F5F5;
+  padding-left:20px;
+  padding-bottom:0px;
+}
+.bg_pink{
+  flex: 70%;
+  background-color: #F2E9F2;
+  padding-left:20px;
+  padding-top:20px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding-bottom: 40px;
+
+
+}
+.column p {
+  margin:0px;
+  padding:0px;
+
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  height:50px;
+  padding-top:10px;
+  text-align: center;
+  background: #24292e;
+  color: #F5F5F5;
+  font-size: 12px;
+  font: Lato;
+
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
