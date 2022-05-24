@@ -3,30 +3,85 @@
   box-sizing: border-box;
 }
 
-/* Style the body */
-body {
-  font: 20px Lato;
-  font-family: lato;
-  margin: 0;
-  color:#24292e;
-}
+/*******************************PINK DESIGN******************************/
 H1
 {
 color: #C66AAB;
 font: 55px Courgette;
 }
+
 H2
 {
   color: #C66AAB;
   font: 26px Courgette;
-
 }
+
 H3
 {
   color: #C66AAB;
   font: 20px Courgette;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #C66AAB; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  /*margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.bg_pink{
+  flex: 70%;
+  background-color: #F2E9F2;
+  padding-left:20px;
+  padding-top:20px;
+}
+
+.pink_button {
+  border-radius: 8px;
+  color: #C66AAB;
+  background-color: #C66AAB; /* PINK */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.pink_button:hover {
+  border-radius: 8px;
+  color: #C66AAB;
+  background-color: #F2E9F2; /* PINK */
+  border: 1px solid #C66AAB;
+  color: #C66AAB;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 
 }
+
+/*****************************************************************************/
+
+
+/* Style the body */
+body {
+  font: 20px Lato;
+  font-family: Lato;
+  margin: 0;
+  color:#24292e;
+}
+
 H4
 {
 
@@ -43,6 +98,7 @@ img {
   width: 100%;
   height: auto;
 }
+
 .img_profil {
   /*background-color: #aaa;*/
   width: 220px;
@@ -78,14 +134,7 @@ ul {
   list-style: none; /* Remove default bullets */
 }
 
-ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #C66AAB; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  /*margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
+
 
 .ul li{
 float: none;
@@ -127,7 +176,7 @@ margin-top: 50px;
 /* Sidebar/left column */
 .side {
   flex: 20%;
-  background-color: #f1f1f1;
+  background-color: #F1F1F1;
   padding: 20px;
 }
 
@@ -138,12 +187,9 @@ margin-top: 50px;
   padding-left:20px;
   padding-bottom:0px;
 }
-.bg_pink{
-  flex: 70%;
-  background-color: #F2E9F2;
-  padding-left:20px;
-  padding-top:20px;
-}
+
+
+
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
