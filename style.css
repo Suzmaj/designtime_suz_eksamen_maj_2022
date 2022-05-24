@@ -36,14 +36,9 @@ ul li::before {
   background-color: #F2E9F2;
   padding-left:20px;
   padding-top:20px;
-  padding-bottom: 50px;
 }
 
-.online_cv{
-padding:0px;
-}
-
-.pink_bt {
+.pink_button {
   border-radius: 8px;
   color: #C66AAB;
   background-color: #C66AAB; /* PINK */
@@ -59,7 +54,7 @@ padding:0px;
   transition-duration: 0.4s;
 }
 
-.pink_bt:hover {
+.pink_button:hover {
   border-radius: 8px;
   color: #C66AAB;
   background-color: #F2E9F2; /* PINK */
