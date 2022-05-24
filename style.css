@@ -14,6 +14,8 @@ H2
 {
   color: #C66AAB;
   font: 26px Courgette;
+  padding-top:0px;
+  margin-top:0px;
 }
 
 H3
@@ -28,17 +30,21 @@ ul li::before {
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
+  padding-top:0px;
+  margin-top:0px;
   /*margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .bg_pink{
   flex: 70%;
   background-color: #F2E9F2;
-  padding-left:20px;
-  padding-top:20px;
+  margin: 0px;
+  padding: 50px;
+
+
 }
 
-.pink_button {
+.pink_bt {
   border-radius: 8px;
   color: #C66AAB;
   background-color: #C66AAB; /* PINK */
@@ -49,12 +55,12 @@ ul li::before {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 2px 100px;
   cursor: pointer;
   transition-duration: 0.4s;
 }
 
-.pink_button:hover {
+.pink_bt:hover {
   border-radius: 8px;
   color: #C66AAB;
   background-color: #F2E9F2; /* PINK */
@@ -65,21 +71,71 @@ ul li::before {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 2px 100px;
   cursor: pointer;
   transition-duration: 0.4s;
 
 }
 
 /*****************************************************************************/
+.flex-container-intro {
+ display: flex;
+ flex-wrap: wrap;
+ background-color:;
+ padding-bottom: 50px;
+}
+
+.img_profile {
+padding-top:50px;
+
+}
+.profile-list {
+  padding-top:0px;
+  margin-top:0px;
+  line-height: 30px;
+
+}
+
+.flex-container-intro-cv {
+ display: flex;
+ flex-wrap: wrap;
+ padding-bottom: 50px;
+}
+
+.flex-container-intro-cv > div {
+ flex: 50%;
+ padding-right:50px;
+ padding-top:0px;
+ margin-top:0px;
+}
+
+.intro-left {
+padding-top:0px;
+margin-top:0px;
+}
+
+.intro-right{
+padding-top:0px;
+margin-top:0px;
+
+}
 
 
 /* Style the body */
+
 body {
   font: 20px Lato;
   font-family: Lato;
   margin: 0;
   color:#24292e;
+}
+
+/* Main column */
+.main {
+  flex: 80%;
+  background-color: #F5F5F5;
+  padding-left:50px;
+  padding-bottom:0px;
 }
 
 H4
@@ -99,13 +155,7 @@ img {
   height: auto;
 }
 
-.img_profil {
-  /*background-color: #aaa;*/
-  width: 220px;
-  height: 243px;
-  padding-right:50px;
-  float: left;
-}
+
 
 /* Style the top navigation bar */
 .navbar {
@@ -137,7 +187,7 @@ ul {
 
 
 .ul li{
-float: none;
+
 }
 
 /*.side ul {
@@ -150,13 +200,10 @@ float: none;
   /*position: fixed; /* Make it stick, even on scroll */
   /*overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
-.list_profil{
-font-size: 20px;
-padding-bottom: 200px;
-}
 
-.intro_tekst_cv p{
-margin-top: 50px;
+
+.intro_text_cv {
+padding-top: 100px;
 }
 /* Header/logo Title */
 .header {
@@ -180,27 +227,20 @@ margin-top: 50px;
   padding: 20px;
 }
 
-/* Main column */
-.main {
-  flex: 80%;
-  background-color: #F5F5F5;
-  padding-left:20px;
-  padding-bottom:0px;
-}
-
-
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
+  width: 20%;
   padding-bottom: 40px;
 
-
 }
-.column p {
+.column img {
+  width:auto;
+  height:auto;
   margin:0px;
   padding:0px;
+
 
 }
 /* Clear floats after the columns */
