@@ -5,24 +5,25 @@
 <Meta description="Suz Maj Flindt Aagaards hjemmeside">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style_index.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sofia">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Courgette">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <a href="#">Om mig</a>
-    <a href="#">Projekter</a>
-    <a href="gallery.html">Galleri</a>
-    <a href="#">Kontakt</a>
+  <!-- Header -->
+  <div class="header">
+    <a href="index.html"><img src="img/suz_topbanner_1920x556px.jpg" alt="topbanner"></a>
   </div>
 
-<!-- Header -->
-<div class="header">
-  <a href="#"><img src="img/suz_topbanner_1920x556px.jpg" alt="topbanner"></a>
-</div>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Om mig</a>
+    <a href="projekter.html">Projekter</a>
+    <a href="galleri.html">Galleri</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+
 
 <!-- The flexible grid (content) -->
 <div class="row">
@@ -43,18 +44,22 @@
 
 
 <div class="flex-container-intro">
-    <div class="img_profile"><img src="img/suz_profil.jpg" alt="Suz Profilbillede"></div>
+    <div class="img_profile"><img class="pink-frame" src="img/suz_profilbillede_green_gold_fritlagt_768px.jpg" alt="Suz Profilbillede"></div>
+
     <div class="profile-list">
-          <ul><h1>Om mig</h1>
-               <li>Under uddannelse som multimediedesigner</li>
-               <li>10 års erhvervserfaring i it-branchen</li>
-               <li>Uddannet mediegrafiker og webdesigner</li>
-              <li>Professionel bruger af InDesign, Photoshop og Illustrator</li>
-              <li>Har arbejdet som webdesigner og marketingassistent</li>
-              <li>Kan kode i HTML5 og CSS</li>
+        <h1 class="intro">Om mig</h1>
+          <ul>
+               <li class="intro">Under uddannelse som multimediedesigner</li>
+               <li class="intro">10 års erhvervserfaring i it-branchen</li>
+               <li class="intro">Uddannet mediegrafiker og webdesigner</li>
+               <li class="intro">Professionel bruger af InDesign, Photoshop og Illustrator</li>
+               <li class="intro">Har arbejdet som webdesigner og marketingassistent</li>
+               <li class="intro">Kan kode i HTML5 og CSS</li>
            </ul>
       </div>
 </div>
+
+<!-- The flexible grid (end) -->
     <div class="bg_pink">
       <div class="flex-container-intro-cv">
             <div class="intro-left"><h2>Hvem er jeg?</h2>
@@ -72,22 +77,22 @@
             </div>
 
   </div>
-<button class="pink_bt">Download CV</button>
-    
+<button class="pink_bt"><a href="http://designtime.dk/doc/CV_2020.pdf" target "blank">Download CV</a></button>
+
 
         <div class="online_cv">
           <h2>Curriculum Vitae - Course of life</h2>
         <h5>Opdateret, 20. maj 2022</h5><br>
           <div class="row">
             <div class="column" style="background-color:#;">
-              <p><img src="img/suz_profil.jpg" alt="Suz Profilbillede"></p>
+              <p><img src="img/designer-computer.jpg" alt=""></p>
 
             </div>
 
               <div class="column" style="background-color:#;">
                 <h3>Stilling</h3>
                 <p>Praktikant</p>
-                <p>Marketingskoordinator</p>
+                <p>Marketing</p>
                 <p>Webdesigner</p>
                 <p>Mediegrafiker elev</p>
                 <p>Mediegrafiker elev</p>
@@ -124,12 +129,12 @@
 
                 <div class="row">
                   <div class="column" style="background-color:#;">
-                    <p><img src="img/suz_profil.jpg" alt="Suz Profilbillede"></p>
+                    <p><img src="img/cmyk-design.jpg" alt="Suz Profilbillede"></p>
                   </div>
 
                     <div class="column" style="background-color:#;">
                       <h3>Uddannelse</h3>
-                      <p>Multimediedesigner</p>
+                      <p>Multimedie</p>
                       <p>Mediegrafiker</p>
                       <p>Webintegrator</p>
                       <p>Pædagog</p>
@@ -160,6 +165,8 @@
                   </div>
            </div>
       </div>
+
+
     </div>
   </div>
 </div>

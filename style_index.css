@@ -4,11 +4,55 @@
 }
 
 /*******************************PINK DESIGN******************************/
+body {
+  font: 20px Lato;
+  font-family: Lato;
+  margin: 0;
+  color:#24292e;
+}
+
+/* Main column */
+.main {
+  flex: 80%;
+  background-color: #F5F5F5;
+  padding-left:50px;
+  padding-bottom:0px;
+}
 H1
 {
 color: #C66AAB;
 font: 55px Courgette;
+padding-top: 40px;
+padding-bottom: 0px;
+padding-left: 30px;
+margin-top:0px;
+margin-bottom:0px;
 }
+
+H1.intro
+{
+color: #C66AAB;
+font: 55px Courgette;
+padding-bottom:0px;
+padding-left:30px;
+}
+
+
+H4
+{
+
+}
+H5
+{
+  color: #24292e;
+  font: 12px Courgette;
+  font-style: italic;
+}
+
+
+
+
+
 
 H2
 {
@@ -31,25 +75,57 @@ ul li::before {
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   padding-top:0px;
+  padding-left:20px;
   margin-top:0px;
+
   /*margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+/*.side ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #;
+  height: 100%; /* Full height */
+  /*position: fixed; /* Make it stick, even on scroll */
+  /*overflow: auto; /* Enable scrolling if the sidenav has too much content */
+
+.profile-list ul li .intro{
+margin-left:20px;
+padding-left:20px;
+
+}
+
+
 
 .bg_pink{
   flex: 70%;
   background-color: #F2E9F2;
   margin: 0px;
   padding: 50px;
+}
 
+
+.pink_bt a {
+  color: #F2E9F2;
+  text-decoration: none;
+
+}
+.pink_bt a:hover {
+  color: #C66AAB;
+  text-decoration: none;
 
 }
 
 .pink_bt {
   border-radius: 8px;
-  color: #C66AAB;
-  background-color: #C66AAB; /* PINK */
+  background-color: #C66AAB; /* LYS PINK */
   border: none;
-  color: white;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -60,9 +136,10 @@ ul li::before {
   transition-duration: 0.4s;
 }
 
+
+
 .pink_bt:hover {
   border-radius: 8px;
-  color: #C66AAB;
   background-color: #F2E9F2; /* PINK */
   border: 1px solid #C66AAB;
   color: #C66AAB;
@@ -77,7 +154,33 @@ ul li::before {
 
 }
 
-/*****************************************************************************/
+.pink-frame {
+  width: 200px;
+  height: 300px;
+  border-radius: 50px 0 50px 0;
+  border: 6px solid #C66AAB; /* PINK */
+  object-fit: cover;
+}
+.column p img {
+  width:100%;
+  height:auto;
+  border-radius: 50px 0 50px 0;
+  border: 6px solid #C66AAB; /* PINK */
+  object-fit: cover;
+}
+
+
+/*******************************PINK DESIGN******************************/
+
+/* Style the body */
+
+
+/*skalerer billedet i rigtige propertioner*/
+img {
+  width: 100%;
+  height: auto;
+}
+
 .flex-container-intro {
  display: flex;
  flex-wrap: wrap;
@@ -117,42 +220,6 @@ margin-top:0px;
 .intro-right{
 padding-top:0px;
 margin-top:0px;
-
-}
-
-
-/* Style the body */
-
-body {
-  font: 20px Lato;
-  font-family: Lato;
-  margin: 0;
-  color:#24292e;
-}
-
-/* Main column */
-.main {
-  flex: 80%;
-  background-color: #F5F5F5;
-  padding-left:50px;
-  padding-bottom:0px;
-}
-
-H4
-{
-
-}
-H5
-{
-  color: #24292e;
-  font: 12px Courgette;
-  font-style: italic;
-}
-
-/*skalerer billedet i rigtige propertioner*/
-img {
-  width: 100%;
-  height: auto;
 }
 
 
@@ -180,26 +247,6 @@ img {
 }
 
 
-ul {
-  list-style: none; /* Remove default bullets */
-}
-
-
-
-.ul li{
-
-}
-
-/*.side ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #;
-  height: 100%; /* Full height */
-  /*position: fixed; /* Make it stick, even on scroll */
-  /*overflow: auto; /* Enable scrolling if the sidenav has too much content */
-}
 
 
 .intro_text_cv {
@@ -215,8 +262,8 @@ padding-top: 100px;
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin:0px;
-  padding:0px;
+  margin-right:0px;
+  padding-right:0px;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -233,16 +280,10 @@ padding-top: 100px;
   float: left;
   width: 20%;
   padding-bottom: 40px;
+  padding-right:40px;
 
 }
-.column img {
-  width:auto;
-  height:auto;
-  margin:0px;
-  padding:0px;
 
-
-}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -268,7 +309,7 @@ padding-top: 100px;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
   .online_cv {
     display:none;
   }

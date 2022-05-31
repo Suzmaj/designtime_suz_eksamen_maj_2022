@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*****************************samme som fra style.css START ************************************/
+
+
+body {
+  font: 20px Lato;
+  font-family: Lato;
+  margin: 0;
+  color:#24292e;
+}
+
+H1
+{
+color: #219BC3;
+font: 55px Courgette;
+padding-top: 40px;
+padding-bottom: 0px;
+padding-left: 30px;
+margin-top:0px;
+margin-bottom:0px;
+}
+
+H2
+{
+  color: #219BC3;
+  font: 26px Courgette;
+  padding-top:0px;
+  margin-top:0px;
+}
+
+H3
+{
+  color: #219BC3;
+  font: 20px Courgette;
+}
+H5
+{
+  color: #24292e;
+  font: 12px Courgette;
+  font-style: italic;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #24292e;
+
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 50px 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  /*background-color: #C66AAB;*/
+  background-color: #707070;
+}
+
+/* Footer */
+.footer {
+  height:50px;
+  padding-top:10px;
+  text-align: center;
+  background: #24292e;
+  color: #F5F5F5;
+  font-size: 12px;
+  font: Lato;
+
+}
+/*****************************samme som fra style.css SLUT ************************************/
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">Om mig</a>
+  <a href="projekter.html">Projekter</a>
+  <a href="galleri.html">Galleri</a>
+  <a href="kontakt.html">Kontakt</a>
+</div>
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <img src="https://www.w3schools.com//w3images/wedding.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/rocks.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/falls2.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/paris.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/nature.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/mist.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com//w3images/underwater.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/ocean.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/wedding.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/mountainskies.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/rocks.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/underwater.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com//w3images/wedding.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/rocks.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/falls2.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/paris.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/nature.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/mist.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com//w3images/underwater.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/ocean.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/wedding.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/mountainskies.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/rocks.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/underwater.jpg" style="width:100%">
+  </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+  <p>© 2022 Designtime.dk  All Rights Reserved</p>
+</div>
+</body>
+</html>
